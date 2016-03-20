@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Inserisci un nuovo oggetto:</h2>
+        
+        <!--Form che permette al venditore di inserire un nuovo oggetto nella 
+        tabella, ho usato il metodo post perchè sto gestendo più tipi di dati 
+        che hanno una lunghezza diversa tra di loro-->
+        
+        <form action="venditore.html" method="post">
+            
+            <div>
+            
+            <label for="NomeOggetto">Nome Oggetto</label>
+            <input type="text" name="NomeOggetto" id="NomeOggetto"> <br> <br>        
+            <label for="URLImmagineDescrittiva">URL Immagine Descrittiva</label>
+            <input type="text" name="URLImmagineDescrittiva" id="URLImmagineDescrittiva"> <br> <br>
+            <label for="Descrizione">Descrizione dell’oggetto</label>
+            <textarea name="Descrizione" id="Descrizione" rows="4" cols="20">Descrizione oggetto</textarea><br> <br>
+            <label for="PrezzoEuro">Prezzo Euro</label>
+            <input type="number" name="PrezzoEuro" id="PrezzoEuro" min="0" max="1500" step='0.01'> <br> <br>
+            <label for="QuantitàOggetto">Quantità Oggetto</label>
+            <input type="number" name="QuantitàOggetto" id="QuantitàOggetto" min="0" max="1500" step='1'> <br> <br>
+        
+            </div>
+            
+        <br>
+        
+        <div>
+            
+        <!--Bottoni che inviano la richiesta alla pagina a cui si riferisce 
+        l'attributo action-->
+        
+        <input type="submit" value="Inserisci oggetto" />
+        <input type="reset" value="Cancella" />
+        
+        </div>
+            
+        </form>
+        
+        <div>
+            
+            <!--Sezione che presenta dei link in modo che cliccandoci si possa viaggiare 
+            tra le pagine del sito-->
+        
+        <p>Se vuoi leggere la descrizione del sito clicca <a href="descrizione.html">qui</a> </p>
+        <p>Se vuoi loggarti al sito clicca <a href="login.html">qui</a> </p>
+        
+        </div>
+        
+    </body>
+</html>
