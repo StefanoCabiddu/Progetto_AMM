@@ -1,0 +1,469 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-mar-2016, 21.06.00
+    Author     : stefano95
+*/
+
+/*Task 3
+
+Impostare le caratteristiche generali di visualizzazione della pagina, facendo in 
+modo che le regole che scrivete valgano per tutte le pagine. In particolare:
+- Colore di sfondo
+- Colore e font per il testo 
+- Proprietà dei titoli (almeno da h1 ad h3)
+- Proprietà dei link
+- Visualizzazione dei campi di input
+*/
+
+body
+{
+    background-color: gold;
+}
+
+p
+{
+    font-family: "Times New Roman", Arial, serif, sans-serif;
+}
+
+h1,h2,h3
+{
+    color: red;
+    font-family: Calibri, Times, serif, sans-serif;
+}
+
+/*
+Ho ripetuto questo tag in modo tale che mi centrasse solo il testo 
+al suo interno.
+*/
+  
+h1
+{
+    text-align: center;
+}
+
+a:link
+{
+    color: blue;
+}
+
+a:visited
+{
+    color: black;
+}
+
+a:hover
+{
+    color: red;
+}
+
+label:after,label:before
+{
+    content: '\A';
+    white-space: pre;
+}
+
+/*
+Personalmente ho preferito strutturare il form in questa maniera
+perché essendo la parte principale della sua pagina è giusto che sia centrato
+e che abbia questa struttura:
+    
+                        - label
+                        - input
+
+da ripetersi per tutti i campi del form.
+  
+Ho visto che anche altri siti (moodle, amazon) adottano questa strategia e ne 
+ho preso spunto.
+*/
+
+/*Fine task 3*/
+
+/* Task 4
+
+Rendere la tabella della pagina cliente.html gradevoli dal punto di vista 
+estetico. In particolare:
+- Utilizzare uno stile diverso per le intestazioni e per i dati
+- Utilizzare un colore di sfondo diverso per le righe pari e quelle dispari.
+- Dimensionare le righe e le colonne in modo appropriato
+*/
+
+th
+{
+    background-color: green;
+    color: gold;
+    font-family: "Times New Roman", Times, serif, sans-serif;
+}
+
+td
+{
+    color: black;
+    font-family: Arial, serif, sans-serif;
+    border: 2px solid black;
+}
+
+/*
+In questo modo ho assicurato l'alternanza dei colori nelle righe della tabella
+della pagina cliente
+*/
+
+tr:nth-child(2n)
+{
+    background-color: aqua;
+}
+
+tr:nth-child(2n+1)
+{
+    background-color: lawngreen;
+}
+
+/*Fine alternanza colori*/
+
+table
+{
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/*Fine task 4*/
+
+/* Task 5
+
+Rendere il form per la login ed il form per l’inserimento di un nuovo oggetto 
+gradevoli dal punto di vista estetico. In particolare:
+- Fare in modo che le label ed i campi di input siano allineati.
+- Impostare bordi e colori per i campi di input, in particolare per il focus
+- Rendere i pulsanti individuabili e gradevoli, posizionandoli al centro dello 
+  spazio riservato al form (oppure in altre posizioni a scelta, che siano però 
+  gradevoli e coerenti per i due form).
+- Utilizzate gli stessi stili per i due form. */
+
+form
+{
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    line-height: 35px;
+    background-color: orange;
+    
+/*
+Ho fatto in modo che il form sia messo in modo da non oscurare gli altri 
+blocchi della pagina html 
+*/
+    
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin: -200px 0 0 -200px;
+}
+
+input
+{
+    border: 1px solid red;
+    background-color: aquamarine;
+    width: 250px;
+}
+
+textarea
+{
+    border: 1px solid red;
+    background-color: aquamarine;
+    width: 250px;
+}
+
+/*
+Ho fatto questa "puntualizzazione" in modo che i bottoni non prendessero la 
+larghezza dei campi di input
+*/
+
+input[type="submit"]
+{
+    border: 1px solid red;
+    background-color: aquamarine;
+    width: 130px;
+}
+
+input[type="reset"]
+{
+    border: 1px solid red;
+    background-color: aquamarine;
+    width: 130px;
+}
+
+/* Fine "puntualizzazione" */
+
+input:focus 
+{
+  border: 1px solid red;
+  color: red;
+}
+
+/* Fine task 5 */
+
+
+/* Task 6
+
+Create un layout responsive, da utilizzare per tutte le pagine. In particolare 
+considerate tre configuazioni:
+- Per larghezze maggiori o uguali a 1024px utilizzare un layout a due o tre colonne
+- Per larghezze minori o uguali a 480px utilizzare un layout ad una sola colonna
+- Per quelli intermedi utilizzare massimo due colonne. 
+- Posizionare i vari contenuti nella posizione ritenuta più appropriata.  
+Create grafica e stili per riconoscere le parti della pagina (header, footer, 
+barre laterali, corpo della pagina).
+*/
+
+@media only screen and (min-width: 1024px)
+{
+    p
+    {
+        color:aqua;
+    }
+    
+    h1,h2,h3
+    {
+        color: orange;
+    }
+    
+    #container
+    {
+        margin: 0 auto;
+        background: green;
+    }
+    
+    #header
+    {
+        padding: 20px;
+        background: deepskyblue;
+    }
+    
+    #navigazione
+    {
+        background: forestgreen;
+        border: 1px solid black;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+/*
+Ho usato un "box" separato per i link interni in modo da essere facilmente 
+individuabili
+*/
+    
+    #LinkInterni
+    {
+        border: 1px solid black;
+        background-color: aquamarine;
+        text-align: left;
+        width: 300px;
+    }
+    
+    #content
+    {
+        padding: 20px;
+        float: left;
+    }
+    
+    #sidebar
+    {
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 20px;
+        float: right;
+    }
+    
+    #clear
+    {
+        clear: both;
+    }
+    
+    #footer
+    {
+        padding: 20px;
+        background-color: gold;
+    }
+    
+    #paglioni
+    {
+        padding: 20px;
+        background-color: blue;
+    }
+    
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+{
+    p
+    {
+        color:blue;
+    }
+    
+    h1,h2,h3
+    {
+        color: black;
+    }
+    
+    #container
+    {
+        margin: 0 auto;
+        background-color: deepskyblue;
+    }
+    
+    #header
+    {
+        padding: 9px;
+        background-color: green;
+        text-align: center;
+    }
+    
+    #navigazione
+    {
+        background-color: aqua;
+        text-align: center;
+        border: 1px solid black;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    #LinkInterni
+    {
+        border: 1px solid black;
+        background-color: chartreuse;
+        text-align: left;
+        width: 300px;
+    }
+    
+    #content
+    {
+        max-width: 620px;
+        padding: 9px;
+        float: left;
+    }
+    
+/*
+Sia nel content che nella sidebar in questo caso ho adottato la proprietà left in 
+modo che i due div si affianchino nella pagina e vengano create le due colonne
+*/
+    
+    #sidebar
+    {
+        border-left: 1px solid black;
+        max-width: 220px;
+        padding: 9px;
+        float: right;
+    }    
+    
+    #clear
+    {
+        clear: both;
+    }
+    
+/*
+Tiene il form centrato nella pagina sempre che non si vada con allungamenti troppo "strani"
+*/
+    
+    form
+    {
+        position: absolute;
+        top: 55%;
+        left: 55%;
+    }
+    
+
+    
+    #footer
+    {
+        padding: 9px;
+        background-color: aquamarine;
+        margin-top: 400px;
+    }
+    
+/*div che controlla una specificazione inseritav da me*/
+    
+    #paglioni
+    {
+        padding: 9px;
+        background-color: orange;
+    }
+    
+}
+
+@media only screen and (max-width: 480px)
+{
+    p
+    {
+        color:black;
+    }
+    
+    h1,h2,h3
+    {
+        color: forestgreen;
+    }
+    
+    #container
+    {
+        margin: 0 auto;
+        background-color: darksalmon;
+    }
+    
+    #header
+    {
+        padding: 9px;
+        background-color: deepskyblue;
+        text-align: center;
+    }
+    
+    #navigazione
+    {
+        background-color: gold;
+        text-align: center;
+        border: 1px solid black;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    
+    #LinkInterni
+    {
+        border: 1px solid black;
+        background-color: orange;
+        text-align: left;
+        width: 300px;
+    }
+    
+    #content
+    {
+        padding: 9px;
+        margin-left: auto;
+    }
+    
+    form
+    {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+    
+    #sidebar
+    {
+        padding: 9px;
+        margin-top: 500px;
+    }
+    
+    #footer
+    {
+        padding: 9px;
+        background-color: forestgreen;
+    }
+    
+    #paglioni
+    {
+        padding: 9px;
+        background-color: aqua;
+        margin-left: 10px;
+    }
+    
+}
