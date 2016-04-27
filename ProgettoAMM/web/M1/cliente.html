@@ -6,19 +6,46 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Cliente</title>
+        <title>ECommerceArco</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="HTML,AMM,TIRO CON L'ARCO,CLIENTE">
         <meta name="description" content="Pagina relativa alla merce venduta">
         <meta name="author" content="Stefano Cabiddu">
+        <link href="../M2/style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
+        
+        <div id="container"> 
+            
+            <!--Sezione titolo-->
+            
+            <div id="header">
+        
         <h1>Articoli in vendita</h1>
+            </div>
+            
+             
+          <!--Sezione navigazione-->  
+
+            
+        <div id="navigazione">
         
-        <p>Ecco un esempio di articoli che potrete trovare su questo sito</p>
+            <!--Sezione che presenta dei link in modo che cliccandoci si possa viaggiare tra le pagine del sito-->
+
+            <a href="login.html">Login</a> 
+
+            <a href="descrizione.html">DescrizioneSito</a> 
+    
+        </div>
+            
+            <!--Sezione contenuto-->
+            
+            <div id="content">
+            
+        <p>Ecco gli articoli che potete trovare su questo sito</p>
         
-        <div>
+            
         
         <!--Tabella che contiene gli oggetti in vendita, la prima riga funge da 
             intestazione della stessa mentre tutte le altre mostrano gli oggetti 
@@ -253,16 +280,42 @@ and open the template in the editor.
         
         </div>
             
-          <p>*Esistono anche i paglioni che ora non sono disponibili in magazzino</p>
-
-        <div>
+            <!--Sezione "precisazione"-->
+            
+            <div id="paglioni">
+            
+        <p>*Esistono anche i paglioni che ora non sono disponibili in magazzino</p>
+            
+            </div>
+            
+            <!--Link utili-->
+            
+            <div id="sidebar">
+                
+                <p>Link utili Federazione Italiana di Tiro con l'arco:</p>
+                
+                <p> <a href="http://www.fitarco-italia.org/">SitoFitarco</a> </p> 
+                
+                <p> <a href="https://it.wikipedia.org/wiki/Federazione_Italiana_Tiro_con_l'arco">InfoFitarco</a> </p> 
+                    
+                <p> <a href="http://www.ianseo.net/index.php?option=com_content&view=article&id=81&Itemid=170">EventiFitarco</a> </p> 
+                
+                <p> <a href="https://www.facebook.com/fitarco.italia">SocialFitarco</a> </p>
+                
+            </div>
+            
+            <div id="clear"></div>
+           
+            <!--Sezione informazioni-->
         
-            <!--Sezione che presenta dei link in modo che cliccandoci si possa viaggiare tra le pagine del sito-->
-
-            <p>Se vuoi loggarti al sito clicca <a href="login.html">qui</a> </p>
-
-            <p>Se vuoi leggere la descrizione del sito clicca <a href="descrizione.html">qui</a> </p>
-    
+        <div id="footer">
+                <p>Sito realizzato da Stefano Cabiddu</p>
+                <p>Per ogni domanda mandare una mail a:
+                    stefcabiddu@gmail.com
+                </p>
+                
+            </div>
+        
         </div>
         
     </body>    

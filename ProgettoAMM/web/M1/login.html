@@ -6,30 +6,50 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Login sito web</title>
+        <title>ECommerceArco</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="HTML,AMM,TIRO CON L'ARCO,LOGIN">
         <meta name="description" content="Pagina di login del sito">
         <meta name="author" content="Stefano Cabiddu">
+        <link href="../M2/style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
-        <strong>Compila questo form se ti vuoi loggare al sito</strong>
+        
+        <div id="container"> 
+            
+            <div id="header">
+                
+                <h2>Form Registrazione</h2>
+            </div>
+            
+           
+            
+            <div id="navigazione">
+                
+                <a href='cliente.html'>Cliente</a> 
+        
+                <a href="venditore.html">Venditore</a>
+        
+            </div>
+            
+           
+            
+            <div id="content">
+                
+                
+                
         
         <!--Inserimento dati-->
         <form action="login.html" method="post">
-        
-        <div>    
-            
+  
         <label for="Username">Username</label>
         <input type="text" name="Username" id="Username"> 
         <label for="Password">Password</label>
         <input type="password" name="Password" id="Password">
         
-        </div>
         
         
-        <div>
         
         <!--Bottoni che inviano la richiesta alla pagina a cui si riferisce 
             l'attributo action-->
@@ -37,17 +57,40 @@ and open the template in the editor.
         <input type="submit" value="Loggami" />
         <input type="reset" value="Cancella" />
         
-        </div>
+        
         
         </form>
         
-        <div>
-        
-        <p>Se vuoi andare alla pagina clienti clicca <a href='cliente.html'>qui</a> </p>
-        
-        <p>Se vuoi inserire nuovi prodotti nel sito clicca <a href="venditore.html">qui</a> </p>
-        
+            </div>
+            
+            <!--Sezione link-->
+            
+            <div id="sidebar">
+                
+                <p>Link utili Federazione Italiana di Tiro con l'arco:</p>
+                
+                <p> <a href="http://www.fitarco-italia.org/">SitoFitarco</a> </p> 
+                
+                <p> <a href="https://it.wikipedia.org/wiki/Federazione_Italiana_Tiro_con_l'arco">InfoFitarco</a> </p> 
+                    
+                <p> <a href="http://www.ianseo.net/index.php?option=com_content&view=article&id=81&Itemid=170">EventiFitarco</a> </p>
+                
+                <p> <a href="https://www.facebook.com/fitarco.italia">SocialFitarco</a> </p>
+                
+            </div>
+            
+            <div id="clear"></div>
+            
+            <!--Sezione informazioni-->
+            
+            <div id="footer">
+                <p>Sito realizzato da Stefano Cabiddu</p>
+                <p>Per ogni domanda mandare una mail a:
+                    stefcabiddu@gmail.com
+                </p>
+            </div>
+            
         </div>
-        
+
     </body>
 </html>

@@ -6,23 +6,54 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>ECommerceArco.it</title>
+        <title>ECommerceArco</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="HTML,AMM,TIRO CON L'ARCO,DESCRIZIONE">
         <meta name="description" content="Pagina di descrizione del sito di e-commerce">
         <meta name="author" content="Stefano Cabiddu">
+        <link href="../M2/style.css" rel="stylesheet" type="text/css" media="screen" />
     </head>
     <body>
-        <h1>Ecommerce tiro con l'arco</h1>
         
-        <!--Per i link interni ho usato questa formattazione in modo che 
+        
+        <div id="container"> 
+            
+            <!--Sezione titolo-->
+            
+        <div id="header">
+        
+        <h1>Ecommerce tiro con l'arco</h1>
+            
+        </div>
+            
+              
+           <!--Sezione navigazione-->
+            
+            <div id="navigazione">
+                
+                <a href='cliente.html'>Cliente</a> 
+        
+                <a href="venditore.html">Venditore</a> 
+        
+                <a href="login.html">Login</a> 
+        
+            </div>
+            
+            <!--Per i link interni ho usato questa formattazione in modo che 
             l'utente utilizza un ordine numerato per la lista principale 
             mentre un ordine puntato per la sottolista che spiega l'utilità 
             dei pezzi venduti-->
         
         <!--Per la lista principale ho preferito usare il tag h2 mentre per 
             la lista secondaria ho usato il tag h3-->
+        
+         
+        
+        <div id="content">
+            
+            <div id="LinkInterni">
+        
         <ol>
             <li><a href='#primo'>Storia del tiro con l'arco</a></li>
             <li><a href='#secondo'>Introduzione al sito</a></li>
@@ -45,10 +76,10 @@ and open the template in the editor.
             <li><a href='#quarto'>Clienti</a></li>
             <li><a href='#quinto'>Venditori</a></li>
         </ol>
+                
+            </div>
         
-        <!--Per separare ogni campo della lista numerata ho usato il tag div-->
         
-        <div>
         
         <h2>
             <a id='primo'>Storia del tiro con l'arco</a>
@@ -75,32 +106,33 @@ and open the template in the editor.
             aperte a entrambi i sessi.
         </p>
         
-        </div>
         
-        <div>
+        
+        
         
         <h2>
             <a id='secondo'>Introduzione al sito</a>
         </h2>
         
         <p>In questa parte del sito faremo una breve introduzione dove andremo a vedere 
-        tutte le peculiarità dello stesso. Questo sito permetterà la vendita di tutto 
+        tutte le peculiarità dello stesso: esso permetterà la vendita di tutto 
         quello che serve per imparare a tirare con l'arco. Ogni pagina del sito avrà 
-        dei link che permetteranno all'utente di viaggiare tra le pagine del sito e 
-        di fare e vedere tutte quelle cose che il sito permette.
+        dei link che permetteranno all'utente di viaggiare tra le pagine del sito. Ci
+        sarà una sezione con dei link utili che permetteranno di conoscere meglio questo
+        fantastico mondo.
         </p>
         
-        </div>
         
-        <div>
+      
+        
         
         <h2>
             <a id='terzo'>Merce venduta </a>
         </h2>
         
         <p>In questo sito si venderanno archi di varie marche (Hoyt), accessori per 
-           l'arciere, accessori per l'arco, frecce e atrezzature varie. La merce venduta 
-           si potrà vedere nella tabella della pagina del cliente.</p>
+           l'arciere, accessori per l'arco, frecce e atrezzature varie. La merce in vendita 
+           è visibile nella tabella sita nella pagina del cliente.</p>
         
         <h3>
             <a id='terzoUno'>Riser </a>
@@ -156,7 +188,8 @@ and open the template in the editor.
         <p>
             Comunemente detto "poggiafrecce", è fissato al riser (solitamente tramite incollaggio) e, come 
             dice il suo nome, serve da appoggio per la freccia mentre si tira, in modo che la freccia non 
-            cada (con possibili conseguenze gravi) e la traiettoria di quest'ultima non venga deviata in partenza
+            cada (con possibili conseguenze gravi) e la traiettoria di quest'ultima non venga deviata in 
+            partenza.
         </p>
         
         <h3>
@@ -270,9 +303,8 @@ and open the template in the editor.
 
         </p>
         
-        </div>
         
-        <div>
+     
         
         <h2>
             <a id='quarto'>Clienti</a>
@@ -286,15 +318,6 @@ and open the template in the editor.
            basterà che si logghi.
         </p>
         
-        </div>
-        
-        <div>
-        
-        <p>Se vuoi andare alla pagina clienti clicca <a href='cliente.html'>qui</a> </p>
-        
-        </div>
-        
-        <div>
         
         <h2>
             <a id='quinto'>Venditori</a>
@@ -304,17 +327,39 @@ and open the template in the editor.
            che l'utente visualizzerà. Ha il compito di tenere il magazzino 
            aggiornato e di decurtare il totale dei soldi una volta che il cliente 
            abbia completato l'ordine 
-        </p>
+        </p> 
         
         </div>
         
-        <div>
+        <!--Link utili-->
         
-            <p>Se vuoi inserire nuovi prodotti nel sito clicca <a href="venditore.html">qui</a> </p>
+        <div id="sidebar">
+                
+                <p>Link utili Federazione Italiana di Tiro con l'arco:</p>
+                
+                <p> <a href="http://www.fitarco-italia.org/">SitoFitarco</a> </p> 
+                
+                <p> <a href="https://it.wikipedia.org/wiki/Federazione_Italiana_Tiro_con_l'arco">InfoFitarco</a> </p>
+                    
+                <p> <a href="http://www.ianseo.net/index.php?option=com_content&view=article&id=81&Itemid=170">EventiFitarco</a> </p> 
+                
+                <p> <a href="https://www.facebook.com/fitarco.italia">SocialFitarco</a> </p>
+                
+        </div>
         
-            <p>Se vuoi loggarti al sito clicca <a href="login.html">qui</a> </p>
+        <div id="clear"></div>
+        
+        <div id="footer">
+                <p>Sito realizzato da Stefano Cabiddu</p>
+                <p>Per ogni domanda mandare una mail a:
+                    stefcabiddu@gmail.com
+                </p>
+                
+            </div>
         
         </div>
+       
+       
         
     </body>
-</html>
+</html>        
