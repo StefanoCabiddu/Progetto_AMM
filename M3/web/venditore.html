@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ECommerceArco</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,AMM,TIRO CON L'ARCO,VENDITORE">
+        <meta name="description" content="Pagina aggiunta oggetti">
+        <meta name="author" content="Stefano Cabiddu">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    <body>
+        
+        <div id="container"> 
+            
+            <div id="header">
+                
+                <h1>Inserisci un nuovo oggetto</h1>
+                
+            </div>
+            
+       <!--Sezione che presenta dei link in modo che cliccandoci si possa viaggiare 
+       tra le pagine del sito-->
+            
+                        <div id="navigazione">
+        
+                <a href="descrizione.html">DescrizioneSito</a> 
+                
+                <a href="login.html">Login</a> 
+        
+        </div>
+            
+            
+            
+        
+        <!--Form che permette al venditore di inserire un nuovo oggetto nella 
+        tabella, ho usato il metodo post perchè sto gestendo più tipi di dati 
+        che hanno una lunghezza diversa tra di loro-->
+        
+        <!--Contenuto pagina-->
+        
+        <div id="content">
+            
+            
+        
+        <form action="venditore.html" method="post">
+            
+            <label for="NomeOggetto">Nome Oggetto</label>
+            <input type="text" name="NomeOggetto" id="NomeOggetto">       
+            <label for="URLImmagineDescrittiva">URL Immagine Descrittiva</label>
+            <input type="text" name="URLImmagineDescrittiva" id="URLImmagineDescrittiva"> 
+            <label for="Descrizione">Descrizione dell’oggetto</label>
+            <textarea name="Descrizione" id="Descrizione" rows="4" cols="20">Descrizione oggetto</textarea>
+            <label for="PrezzoEuro">Prezzo Euro</label>
+            <input type="number" name="PrezzoEuro" id="PrezzoEuro" min="0" max="1500" step='0.01'>
+            <label for="QuantitàOggetto">Quantità Oggetto</label>
+            <input type="number" name="QuantitàOggetto" id="QuantitàOggetto" min="0" max="1500" step='1'>
+        
+  
+            
+        <!--Bottoni che inviano la richiesta alla pagina a cui si riferisce 
+        l'attributo action-->
+        
+        <input type="submit" name="submit" value="Inserisci oggetto" />
+        <input type="reset" value="Cancella" />
+        
+        </form>
+        
+        </div>
+        
+        <div id="sidebar">
+                
+                <p>Link utili Federazione Italiana di Tiro con l'arco:</p>
+                
+                <p> <a href="http://www.fitarco-italia.org/">SitoFitarco</a> </p> 
+                
+                <p> <a href="https://it.wikipedia.org/wiki/Federazione_Italiana_Tiro_con_l'arco">InfoFitarco</a> <p> 
+                    
+                <p> <a href="http://www.ianseo.net/index.php?option=com_content&view=article&id=81&Itemid=170">EventiFitarco</a> </p> 
+                
+                <p> <a href="https://www.facebook.com/fitarco.italia">SocialFitarco</a> </p>
+                
+            </div> 
+        
+        <div id="clear"></div>
+            
+
+            
+            <div id="footer">
+                <p>Sito realizzato da Stefano Cabiddu</p>
+                <p>Per ogni domanda mandare una mail a:
+                    stefcabiddu@gmail.com
+                </p>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+</html>        
