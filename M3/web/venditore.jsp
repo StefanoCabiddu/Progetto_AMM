@@ -49,7 +49,7 @@
           <c:choose>            
                 <c:when test="${IsVendor == null || IsVendor==false}">
                     <div id="errorMessage">
-                        <p>Utente non autenticato o non autorizzato all'accesso dei contenuti della pagina<p>
+                        <p>Utente non autorizzato all'accesso dei contenuti della pagina<p>
                   </div>
                </c:when>
                 
